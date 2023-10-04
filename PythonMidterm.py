@@ -16,12 +16,28 @@ class Animal:
     self.country = 
     
 class Hyena(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
+    super().__init__(name, age, sex, season_born, color, weight, location, country)
+    self.ID = 
+    self.habitat = (f"Hy"
 
 class Tiger(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
+    super().__init__(name, age, sex, season_born, color, weight, location, country)
+    self.ID = 
+    self.habitat = (f"Hy"
 
 class Lion(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
+    super().__init__(name, age, sex, season_born, color, weight, location, country)
+    self.ID = 
+    self.habitat = (f"Hy" 
 
 class Bear(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
+    super().__init__(name, age, sex, season_born, color, weight, location, country)
+    self.ID = 
+    self.habitat = (f"Hy"
     
 # def genBirthDay(): 
 #   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
@@ -34,3 +50,5 @@ class Bear(Animal):
 
 # def genZooHabitat(): 
 #   """Assign each new animal to a habitat. Each species must have its own habitat."""
+
+# https://www.youtube.com/watch?v=JeznW_7DlB0 38:48 uses f-strings to output attributes. Might be useful for above functions ^^^
