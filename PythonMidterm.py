@@ -4,6 +4,18 @@
 # Date: 09/29/23
 # Class: CIT 95
 
+class Animal:
+    def __init__(self)
+    self.
+    
+class Hyena(Animal):
+
+class Tiger(Animal):
+
+class Lion(Animal):
+
+class Bear(Animal):
+    
 # def genBirthDay(): 
 #   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
 
