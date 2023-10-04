@@ -48,7 +48,13 @@ read_arriving = arrivingAnimalstxt.readlines()
 arrivingAnimals_list = []               # Turns the content in arrivingAnimals.txt into a list
 for animal in read_arriving: 
     arrivingAnimals_list.append(animal.strip())
-print(arrivingAnimals_list)
+
+# Here are 4 seperate lists created by slicing the arrivingAnimals_list. 
+arriving_Hyenas =  arrivingAnimals_list[0:4]
+arriving_Tigers = arrivingAnimals_list[4:8]
+arriving_Lions = arrivingAnimals_list[8:12]
+arriving_Bears = arrivingAnimals_list[12:16]
+print(arriving_Bears)
 
 # def genBirthDay(): 
 #   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
