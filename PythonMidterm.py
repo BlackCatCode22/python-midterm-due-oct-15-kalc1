@@ -5,8 +5,15 @@
 # Class: CIT 95
 
 class Animal:
-    def __init__(self)
-    self.
+    def __init__(self, name, age, sex, season_born, color, weight, location, country)
+    self.name = 
+    self.age = 
+    self.sex = 
+    self.season_born = 
+    self.color = 
+    self.weight = 
+    self.location = 
+    self.country = 
     
 class Hyena(Animal):
 
