@@ -25,19 +25,19 @@ class Tiger(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
     super().__init__(name, age, sex, season_born, color, weight, location, country)
     self.ID = 
-    self.habitat = (f"Hy"
+    self.habitat = (f"Ti"
 
 class Lion(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
     super().__init__(name, age, sex, season_born, color, weight, location, country)
     self.ID = 
-    self.habitat = (f"Hy" 
+    self.habitat = (f"Li" 
 
 class Bear(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
     super().__init__(name, age, sex, season_born, color, weight, location, country)
     self.ID = 
-    self.habitat = (f"Hy"
+    self.habitat = (f"Be"
     
 # def genBirthDay(): 
 #   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
