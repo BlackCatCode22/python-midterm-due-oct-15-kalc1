@@ -19,26 +19,26 @@
 # class Hyena(Animal):
 #     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
 #     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = 
-#     self.habitat = (f"Hy"
+#     self.ID = # def genUniqueAnimalID(): 
+#     self.habitat = "Hyena Habitat" def genZooHabitat():
 
 # class Tiger(Animal):
 #     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
 #     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = 
-#     self.habitat = (f"Ti"
+#     self.ID = # def genUniqueAnimalID(): 
+#     self.habitat = "Tiger Habitat" def genZooHabitat():
 
 # class Lion(Animal):
 #     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
 #     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = 
-#     self.habitat = (f"Li" 
+#     self.ID = # def genUniqueAnimalID(): 
+#     self.habitat = "Lion Habitat" def genZooHabitat():
 
 # class Bear(Animal):
 #     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
 #     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = 
-#     self.habitat = (f"Be"
+#     self.ID = # def genUniqueAnimalID(): 
+#     self.habitat = "Bear Habitat" def genZooHabitat():
 #*******End of Classes
 
 
@@ -54,16 +54,21 @@ arriving_Hyenas =  arrivingAnimals_list[0:4]
 arriving_Tigers = arrivingAnimals_list[4:8]
 arriving_Lions = arrivingAnimals_list[8:12]
 arriving_Bears = arrivingAnimals_list[12:16]
+print(arriving_Hyenas)
+print(arriving_Tigers)
+print(arriving_Lions)
 print(arriving_Bears)
 
-# def genBirthDay(): 
-#   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
+
 
 # def genUniqueAnimalID(): 
 #   """Calculate a unique ID to uniquely identify each animal in your zoo."""
 
 # def genAnimalName(): 
 #   """Create an animal name based on input from a community fundraiser (animalNames.txt)."""
+
+# def genBirthDay(): 
+#   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
 
 # def genZooHabitat(): 
 #   """Assign each new animal to a habitat. Each species must have its own habitat."""
