@@ -74,9 +74,9 @@ for name in read_names:
 for name in name_list:
     if name == '':
         name_list.pop(name_list.index(''))
-print(name_list)
+# print(name_list)
 
-# Create 4 lists of names:
+# Create 4 lists of names: 
 Hyena_Names = []
 Lion_Names = []
 Bear_Names = []
@@ -84,7 +84,16 @@ Tiger_Names = []
 for element in name_list:
     if element == 'Hyena Names:':
         Hyena_Names.append(name_list[name_list.index(element)+1])
-print(Hyena_Names)                           
+    if element == 'Lion Names:':
+        Lion_Names.append(name_list[name_list.index(element)+1])
+    if element == 'Bear Names:':
+        Bear_Names.append(name_list[name_list.index(element)+1])  
+    if element == 'Tiger Names:':
+        Tiger_Names.append(name_list[name_list.index(element)+1])      
+# print(Hyena_Names)                           
+# print(Lion_Names)
+# print(Bear_Names)
+# print(Tiger_Names)
 
 
 # def genUniqueAnimalID(): 
