@@ -76,6 +76,15 @@ for name in name_list:
         name_list.pop(name_list.index(''))
 print(name_list)
 
+# Create 4 lists of names:
+Hyena_Names = []
+Lion_Names = []
+Bear_Names = []
+Tiger_Names = []
+for element in name_list:
+    if element == 'Hyena Names:':
+        Hyena_Names.append(name_list[name_list.index(element)+1])
+print(Hyena_Names)                           
 
 
 # def genUniqueAnimalID(): 
@@ -92,3 +101,4 @@ print(name_list)
 
 # https://www.youtube.com/watch?v=JeznW_7DlB0 38:48 uses f-strings to output attributes. Might be useful for above functions ^^^
 # lists within dictionaries within a list: https://www.youtube.com/watch?v=6x8oN6FtpLo
+# To-Do with the name_list: seperate each of the animal names into 4 different lists. Put those 4 lists into 1 dictionary. Use 'Hyena Names:' as the key(s) for the dictionary for the corresponding animals. 
