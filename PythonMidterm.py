@@ -15,6 +15,10 @@
 #     self.weight = 
 #     self.location = 
 #     self.country = 
+    # self.Hyena = False
+    # self.Lion = False 
+    # self.Bear = False 
+    # self.Tiger = False
     
 # class Hyena(Animal):
 #     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
@@ -54,10 +58,23 @@ arriving_Hyenas =  arrivingAnimals_list[0:4]
 arriving_Tigers = arrivingAnimals_list[4:8]
 arriving_Lions = arrivingAnimals_list[8:12]
 arriving_Bears = arrivingAnimals_list[12:16]
-print(arriving_Hyenas)
-print(arriving_Tigers)
-print(arriving_Lions)
-print(arriving_Bears)
+# print(arriving_Hyenas)
+# print(arriving_Tigers)
+# print(arriving_Lions)
+# print(arriving_Bears)
+
+# This block of code takes the data from animalNames.txt and produces a list for each element in the .txt file and also removes the empty '' elements. 
+animalNamestxt = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-midterm-due-oct-15-kalc1\\animalNames.txt', 'r')
+read_names = animalNamestxt.readlines()
+name_list = []
+for name in read_names:
+    name = name.strip()
+    name_list.append(name)
+
+for name in name_list:
+    if name == '':
+        name_list.pop(name_list.index(''))
+print(name_list)
 
 
 
@@ -74,3 +91,4 @@ print(arriving_Bears)
 #   """Assign each new animal to a habitat. Each species must have its own habitat."""
 
 # https://www.youtube.com/watch?v=JeznW_7DlB0 38:48 uses f-strings to output attributes. Might be useful for above functions ^^^
+# lists within dictionaries within a list: https://www.youtube.com/watch?v=6x8oN6FtpLo
