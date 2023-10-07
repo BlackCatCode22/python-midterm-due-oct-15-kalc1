@@ -4,11 +4,13 @@
 # Date: 09/29/23
 # Class: CIT 95
 
+import datetime
 #******* Start of Classes: 
 class Animal:
-    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+    def __init__(self, name, age, birthday, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         self.name = ''
         self.age = ''
+        self.birthday = ''
         self.sex = ''
         self.season_born = ''
         self.color = ''
@@ -21,22 +23,54 @@ class Animal:
         self.Tiger = False
         self.ID = '' # def genUniqueAnimalID(): 
         self.habitat = '' # def genZooHabitat():
+        
+# def genUniqueAnimalID(): 
+#   """Calculate a unique ID to uniquely identify each animal in your zoo."""
+    #return self.id
+
+# def genAnimalName(): 
+#   """Create an animal name based on input from a community fundraiser (animalNames.txt)."""
+    #return self.name
+
+# def genBirthDay(): 
+#   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
+    #return self.birthday
+
+# def genZooHabitat(): 
+#   """Assign each new animal to a habitat. Each species must have its own habitat."""
+    #return self.habitat
     
 class Hyena(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
+        
+    def genZooHabitat(): 
+        """Assign each new animal to a habitat. Each species must have its own habitat."""
+        return self.habitat = 'Hyena'
 
 class Tiger(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
+        
+    def genZooHabitat(): 
+        """Assign each new animal to a habitat. Each species must have its own habitat."""
+        return self.habitat = 'Tiger'
 
 class Lion(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
+        
+    def genZooHabitat(): 
+        """Assign each new animal to a habitat. Each species must have its own habitat."""
+        return self.habitat = 'Lion'
 
 class Bear(Animal):
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
+        
+    def genZooHabitat(): 
+        """Assign each new animal to a habitat. Each species must have its own habitat."""
+        return self.habitat = 'Bear'
 #*******End of Classes
 
 
@@ -88,19 +122,6 @@ for element in name_list:
 # print(Lion_Names)
 # print(Bear_Names)
 # print(Tiger_Names)
-
-
-# def genUniqueAnimalID(): 
-#   """Calculate a unique ID to uniquely identify each animal in your zoo."""
-
-# def genAnimalName(): 
-#   """Create an animal name based on input from a community fundraiser (animalNames.txt)."""
-
-# def genBirthDay(): 
-#   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
-
-# def genZooHabitat(): 
-#   """Assign each new animal to a habitat. Each species must have its own habitat."""
 
 # https://www.youtube.com/watch?v=JeznW_7DlB0 38:48 uses f-strings to output attributes. Might be useful for above functions ^^^
 # lists within dictionaries within a list: https://www.youtube.com/watch?v=6x8oN6FtpLo
