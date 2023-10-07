@@ -5,44 +5,38 @@
 # Class: CIT 95
 
 #******* Start of Classes: 
-# class Animal:
-#     def __init__(self, name, age, sex, season_born, color, weight, location, country)
-#     self.name = 
-#     self.age = 
-#     self.sex = 
-#     self.season_born = 
-#     self.color = 
-#     self.weight = 
-#     self.location = 
-#     self.country = 
-    # self.Hyena = False
-    # self.Lion = False 
-    # self.Bear = False 
-    # self.Tiger = False
+class Animal:
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+        self.name = ''
+        self.age = ''
+        self.sex = ''
+        self.season_born = ''
+        self.color = ''
+        self.weight = ''
+        self.location = ''
+        self.country = ''
+        self.Hyena = False
+        self.Lion = False 
+        self.Bear = False 
+        self.Tiger = False
+        self.ID = '' # def genUniqueAnimalID(): 
+        self.habitat = '' # def genZooHabitat():
     
-# class Hyena(Animal):
-#     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
-#     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = # def genUniqueAnimalID(): 
-#     self.habitat = "Hyena Habitat" def genZooHabitat():
+class Hyena(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+        super().__init__(name, age, sex, season_born, color, weight, location, country)
 
-# class Tiger(Animal):
-#     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
-#     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = # def genUniqueAnimalID(): 
-#     self.habitat = "Tiger Habitat" def genZooHabitat():
+class Tiger(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+        super().__init__(name, age, sex, season_born, color, weight, location, country)
 
-# class Lion(Animal):
-#     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
-#     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = # def genUniqueAnimalID(): 
-#     self.habitat = "Lion Habitat" def genZooHabitat():
+class Lion(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+        super().__init__(name, age, sex, season_born, color, weight, location, country)
 
-# class Bear(Animal):
-#     def __init__(self, name, age, sex, season_born, color, weight, location, country, habitat, ID)
-#     super().__init__(name, age, sex, season_born, color, weight, location, country)
-#     self.ID = # def genUniqueAnimalID(): 
-#     self.habitat = "Bear Habitat" def genZooHabitat():
+class Bear(Animal):
+    def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+        super().__init__(name, age, sex, season_born, color, weight, location, country)
 #*******End of Classes
 
 

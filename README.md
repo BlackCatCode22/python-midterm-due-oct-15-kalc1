@@ -45,6 +45,8 @@ genUniqueAnimalID(): Calculate a unique ID to uniquely identify each animal in y
 genAnimalName(): Create an animal name based on input from a community fundraiser (animalNames.txt).
 genZooHabitat(): Assign each new animal to a habitat. Each species must have its own habitat.
 Input Data Format
+Static Fields: In your program, you are required to have a static field named numOfAnimals and four more static fields like numOfHyenas, numOfTigers, etc. Can you demonstrate how and where these static class members are incremented in your code? Understanding when and how these fields are updated is essential for proper program functionality.
+
 The information about arriving animals will arrive in the following format with an unknown number of lines (arrivingAnimals.txt):
 
 4 year old female hyena, born in spring, tan color, 70 pounds, from Friguia Park, Tunisia
