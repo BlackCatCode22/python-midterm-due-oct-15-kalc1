@@ -4,9 +4,12 @@
 # Date: 09/29/23
 # Class: CIT 95
 
-import datetime
-#******* Start of Classes: 
+import datetime     #This is used 
+#******* Start of Classes********
 class Animal:
+    # A counter to keep track of the number of animals we have.    
+    animal_count = 00
+    
     def __init__(self, name, age, birthday, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         self.name = ''
         self.age = ''
@@ -24,54 +27,52 @@ class Animal:
         self.ID = '' # def genUniqueAnimalID(): 
         self.habitat = '' # def genZooHabitat():
         
-# def genUniqueAnimalID(): 
-#   """Calculate a unique ID to uniquely identify each animal in your zoo."""
-    #return self.id
-
-# def genAnimalName(): 
-#   """Create an animal name based on input from a community fundraiser (animalNames.txt)."""
-    #return self.name
-
-# def genBirthDay(): 
-#   """Calculate a birthday from the information received from the originating zoo. Handle cases where the birth season is unknown."""
-    #return self.birthday
-
-# def genZooHabitat(): 
-#   """Assign each new animal to a habitat. Each species must have its own habitat."""
-    #return self.habitat
+        Animal.animal_count += 1
     
 class Hyena(Animal):
+    # A counter to keep track of the number of Hyenas
+    hyena_count = 00
+    
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
         
-    def genZooHabitat(): 
-        """Assign each new animal to a habitat. Each species must have its own habitat."""
-        return self.habitat = 'Hyena'
+    # def genZooHabitat(): 
+    #     """Assign each new animal to a habitat. Each species must have its own habitat."""
+    #     return self.habitat = 'Hyena'
 
 class Tiger(Animal):
+    # A counter to keep track of the number of Tigers
+    tiger_count = 00
+        
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
         
-    def genZooHabitat(): 
-        """Assign each new animal to a habitat. Each species must have its own habitat."""
-        return self.habitat = 'Tiger'
+    # def genZooHabitat(): 
+    #     """Assign each new animal to a habitat. Each species must have its own habitat."""
+    #     return self.habitat = 'Tiger'
 
 class Lion(Animal):
+    # A counter to keep track of the number of Lions
+    lion_count = 00
+    
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
         
-    def genZooHabitat(): 
-        """Assign each new animal to a habitat. Each species must have its own habitat."""
-        return self.habitat = 'Lion'
+    # def genZooHabitat(): 
+    #     """Assign each new animal to a habitat. Each species must have its own habitat."""
+    #     return self.habitat = 'Lion'
 
 class Bear(Animal):
+    # A counter to keep track of the number of Bears
+    bear_count = 00
+    
     def __init__(self, name, age, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
         super().__init__(name, age, sex, season_born, color, weight, location, country)
         
-    def genZooHabitat(): 
-        """Assign each new animal to a habitat. Each species must have its own habitat."""
-        return self.habitat = 'Bear'
-#*******End of Classes
+    # def genZooHabitat(): 
+    #     """Assign each new animal to a habitat. Each species must have its own habitat."""
+    #     return self.habitat = 'Bear'
+#*******End of Classes**********
 
 
 arrivingAnimalstxt = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-midterm-due-oct-15-kalc1\\arrivingAnimals.txt', 'r')
@@ -80,6 +81,12 @@ read_arriving = arrivingAnimalstxt.readlines()
 arrivingAnimals_list = []               # Turns the content in arrivingAnimals.txt into a list
 for animal in read_arriving: 
     arrivingAnimals_list.append(animal.strip())
+#print(arrivingAnimals_list)
+# Parse each list item to extract each animal object's attributes:
+for line in arrivingAnimals_list:
+    data = arrivingAnimals_list.split(',')
+!!!!!!!!!!!!!!    
+    
 
 # Here are 4 seperate lists created by slicing the arrivingAnimals_list. 
 arriving_Hyenas =  arrivingAnimals_list[0:4]
