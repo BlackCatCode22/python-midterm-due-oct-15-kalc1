@@ -10,7 +10,7 @@ class Animal:
     # A counter to keep track of the number of animals we have.    
     animal_count = 00
     
-    def __init__(self, name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat):
+    def __init__(self, name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat, arrived):
         self.name = ''
         self.age = ''
         self.birthday = ''
@@ -19,6 +19,7 @@ class Animal:
         self.color = ''
         self.weight = ''
         self.origin = ''
+        self.arrived = ''
         self.Hyena = False
         self.Lion = False 
         self.Bear = False 
