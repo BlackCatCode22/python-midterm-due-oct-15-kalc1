@@ -82,16 +82,21 @@ arrivingAnimals_list = []               # Turns the content in arrivingAnimals.t
 for animal in read_arriving: 
     append_animal = animal.strip().split(',')
     arrivingAnimals_list.append(append_animal)
-
-#arrivingAnimals_list[0][4:6] = [''.join(arrivingAnimals_list[0][4:6])]
 # print(arrivingAnimals_list)
+#arrivingAnimals_list[0][4:6] = [''.join(arrivingAnimals_list[0][4:6])]
 
-new_element_0 = []
+
+new_element_0 = []                      # Splits the first element in each list obtained from arrivingAnimals by spaces. 
 for list in arrivingAnimals_list:
     update_list = list[0].split()
     new_element_0.append(update_list)
-    
-print(new_element_0)
+#print(new_element_0)
+
+# This replaces the newly created lists above with the first item in each list from the original arrivingAnimals_list
+for element, new_element in zip(arrivingAnimals_list, new_element_0):
+    element[0] = new_element[0:5]
+    arrivingAnimals_list.append(element[0])
+# print(arrivingAnimals_list[0])
  
 # Here are 4 seperate lists created by slicing the arrivingAnimals_list. 
 arriving_Hyenas =  arrivingAnimals_list[0:4]
