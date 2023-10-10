@@ -157,4 +157,8 @@ for i in range(0,4):
 for i in range(0,4):
     bear_objects.append(Bear())
 merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
-print(merged_objects)
+#print(merged_objects)
+
+# FIX ANIMAL COUNTERS
+print(animal_count)
+print(lion_count)
