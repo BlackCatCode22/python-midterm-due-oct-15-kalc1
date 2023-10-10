@@ -156,4 +156,5 @@ for i in range(0,4):
     lion_objects.append(Lion())
 for i in range(0,4):
     bear_objects.append(Bear())
-
+merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
+print(merged_objects)
