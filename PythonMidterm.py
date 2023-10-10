@@ -84,7 +84,14 @@ for animal in read_arriving:
     arrivingAnimals_list.append(append_animal)
 
 #arrivingAnimals_list[0][4:6] = [''.join(arrivingAnimals_list[0][4:6])]
-print(arrivingAnimals_list)
+# print(arrivingAnimals_list)
+
+new_element_0 = []
+for list in arrivingAnimals_list:
+    update_list = list[0].split()
+    new_element_0.append(update_list)
+    
+print(new_element_0)
  
 # Here are 4 seperate lists created by slicing the arrivingAnimals_list. 
 arriving_Hyenas =  arrivingAnimals_list[0:4]
