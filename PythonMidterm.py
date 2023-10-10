@@ -8,22 +8,22 @@ import datetime     #This is used
 #******* Start of Classes********
 class Animal:
     # A counter to keep track of the number of animals we have.    
-    animal_count = 00
+    animal_count = 0
     
-    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', Hyena=False, Lion=False, Bear=False, Tiger=False, ID='', habitat='', arrived=''):
+    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
         self.name = name
         self.age = age
         self.birthday = birthday
         self.sex = sex
-        self.season_born = birthday
+        self.season_born = season_born
         self.color = color
         self.weight = weight
         self.origin = origin
         self.arrived = arrived
-        self.Hyena = Hyena
-        self.Lion = Lion
-        self.Bear = Bear 
-        self.Tiger = Tiger
+        # self.Hyena = Hyena
+        # self.Lion = Lion
+        # self.Bear = Bear 
+        # self.Tiger = Tiger
         self.ID = ID # def genUniqueAnimalID(): 
         self.habitat = habitat # def genZooHabitat():
         
@@ -31,50 +31,50 @@ class Animal:
     
 class Hyena(Animal):
     # A counter to keep track of the number of Hyenas
-    hyena_count = 00
+    hyena_count = 0
     
-    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='',Hyena=True, Lion=False, Bear=False, Tiger=False, ID='', habitat='', arrived=''):
-        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat, arrived)
+    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
+        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, ID, habitat, arrived)
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Hyena'
-    hyena_count += 1
+        Hyena.hyena_count += 1
 
 class Tiger(Animal):
     # A counter to keep track of the number of Tigers
-    tiger_count = 00
+    tiger_count = 0
         
-    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='',Hyena=False, Lion=False, Bear=False, Tiger=True, ID='', habitat='', arrived=''):
-        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat, arrived)
+    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
+        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, ID, habitat, arrived)
         
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Tiger'
-    tiger_count += 1
+        Tiger.tiger_count += 1
 
 class Lion(Animal):
     # A counter to keep track of the number of Lions
-    lion_count = 00
+    lion_count = 0
     
-    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='',Hyena=False, Lion=True, Bear=False, Tiger=False, ID='', habitat='', arrived=''):
-        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat, arrived)
+    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
+        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, ID, habitat, arrived)
         
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Lion'
-    lion_count += 1
+        Lion.lion_count += 1
 
 class Bear(Animal):
     # A counter to keep track of the number of Bears
-    bear_count = 00
+    bear_count = 0
     
-    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='',Hyena=False, Lion=False, Bear=True, Tiger=False, ID='', habitat='', arrived=''):
-        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat, arrived)
+    def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
+        super().__init__(name, age, birthday, sex, season_born, color, weight, origin, ID, habitat, arrived)
         
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Bear'
-    bear_count += 1
+        Bear.bear_count += 1
 #*******End of Classes**********
 
 
@@ -160,5 +160,8 @@ merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
 #print(merged_objects)
 
 # FIX ANIMAL COUNTERS
-print(animal_count)
-print(lion_count)
+print(Animal.animal_count)
+print(Lion.lion_count)
+print(Hyena.hyena_count)
+print(Bear.bear_count)
+print(Tiger.tiger_count)
