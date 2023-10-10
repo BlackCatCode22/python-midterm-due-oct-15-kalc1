@@ -78,16 +78,14 @@ class Bear(Animal):
 arrivingAnimalstxt = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-midterm-due-oct-15-kalc1\\arrivingAnimals.txt', 'r')
 read_arriving = arrivingAnimalstxt.readlines()
 
-arrivingAnimals_list = []               # Turns the content in arrivingAnimals.txt into a list
+arrivingAnimals_list = []               # Turns the content in arrivingAnimals.txt into a list, splits into seperate elements by ',', 
 for animal in read_arriving: 
-    arrivingAnimals_list.append(animal.strip())
-#print(arrivingAnimals_list)
-# Parse each list item to extract each animal object's attributes:
-for line in arrivingAnimals_list:
-    data = arrivingAnimals_list.split(',')
-!!!!!!!!!!!!!!    
-    
+    append_animal = animal.strip().split(',')
+    arrivingAnimals_list.append(append_animal)
 
+#arrivingAnimals_list[0][4:6] = [''.join(arrivingAnimals_list[0][4:6])]
+print(arrivingAnimals_list)
+ 
 # Here are 4 seperate lists created by slicing the arrivingAnimals_list. 
 arriving_Hyenas =  arrivingAnimals_list[0:4]
 arriving_Tigers = arrivingAnimals_list[4:8]
