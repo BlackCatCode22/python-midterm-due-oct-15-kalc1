@@ -144,3 +144,13 @@ for element in name_list:
 # print(Tiger_Names)
 
 #Hy1 = Hyena()
+object_list = []
+for i in range(0,4):
+    object_list.append(Hyena())
+for i in range(0,4):
+    object_list.append(Tiger())
+for i in range(0,4):
+    object_list.append(Lion())
+for i in range(0,4):
+    object_list.append(Bear())
+print(object_list)
