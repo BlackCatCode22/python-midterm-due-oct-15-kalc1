@@ -10,7 +10,7 @@ class Animal:
     # A counter to keep track of the number of animals we have.    
     animal_count = 00
     
-    def __init__(self, name, age, birthday, sex, season_born, color, weight, location, country, Hyena, Lion, Bear, Tiger, ID, habitat):
+    def __init__(self, name, age, birthday, sex, season_born, color, weight, origin, Hyena, Lion, Bear, Tiger, ID, habitat):
         self.name = ''
         self.age = ''
         self.birthday = ''
@@ -18,8 +18,7 @@ class Animal:
         self.season_born = ''
         self.color = ''
         self.weight = ''
-        self.location = ''
-        self.country = ''
+        self.origin = ''
         self.Hyena = False
         self.Lion = False 
         self.Bear = False 
@@ -39,6 +38,7 @@ class Hyena(Animal):
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Hyena'
+    hyena_count += 1
 
 class Tiger(Animal):
     # A counter to keep track of the number of Tigers
@@ -50,6 +50,7 @@ class Tiger(Animal):
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Tiger'
+    tiger_count += 1
 
 class Lion(Animal):
     # A counter to keep track of the number of Lions
@@ -61,6 +62,7 @@ class Lion(Animal):
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Lion'
+    lion_count += 1
 
 class Bear(Animal):
     # A counter to keep track of the number of Bears
@@ -72,6 +74,7 @@ class Bear(Animal):
     # def genZooHabitat(): 
     #     """Assign each new animal to a habitat. Each species must have its own habitat."""
     #     return self.habitat = 'Bear'
+    bear_count += 1
 #*******End of Classes**********
 
 
