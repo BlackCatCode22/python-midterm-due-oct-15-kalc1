@@ -143,16 +143,3 @@ for element in name_list:
 # print(Lion_Names)
 # print(Bear_Names)
 # print(Tiger_Names)
-
-# https://www.youtube.com/watch?v=JeznW_7DlB0 38:48 uses f-strings to output attributes. Might be useful for above functions ^^^
-# lists within dictionaries within a list: https://www.youtube.com/watch?v=6x8oN6FtpLo
-# To-Do with the name_list: seperate each of the animal names into 4 different lists. Put those 4 lists into 1 dictionary. Use 'Hyena Names:' as the key(s) for the dictionary for the corresponding animals. 
-# - move 4 functions I need to define into the parent Animal Class
-# - "Do i need to create 1 list with all the animal names? Or 4 different lists with animal names. Probably 4 different lists....
-# - Maybe define the different attributes by either string, bool, or int. Place empty placeholders for now (i.e. "" for str, 0 for int, false/true for Bool)
-# - Idea: Create booleans for the classes that signify which animal they are.
-#             for example: Animal class, Hyena = False, Lion = False, Bear = False, Tiger = False
-#             but the child class turns the corresponding Bool True
-#             You can then use those booleans to direct how your functions will act
-#information hiding: The object-oriented programming principle to only allow the object to have access to the underlying details of the object and hide the data and internal workings from entities outside of it.
-# "Methods are typically used to change the state of an object."
