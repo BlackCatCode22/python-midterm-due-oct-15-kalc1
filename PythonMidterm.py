@@ -147,6 +147,7 @@ for element in name_list:
 
 #####  These define the functions that will go into our genZooHabitat for-loop ######
 def genUniqueAnimalID(habitat):
+    """Calculates a unique ID to uniquely identify each animal in the zoo."""
     if habitat == 'hyena':
         uniqueID = "Hy0" + str(Hyena.hyena_count +1)
         return uniqueID
@@ -162,7 +163,11 @@ def genUniqueAnimalID(habitat):
     else:
 	    print("UniqueAnimalID function error")
      
+#  def genAnimalName(): 
+    # """Create an animal name based on input from a community fundraiser (animalNames.txt)"""
+     
 # def genBirthDay():
+    # """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
 # 	arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
 # 	self.birthday
 # 	else:
@@ -256,20 +261,21 @@ bear_habitat = []
 
 # This function defines a program which creates and adds animal objects to the appropriate habitat. As the animals are added, the appropriate attributes are given using various functions defined above. 
 def genzooHabitat(habitat):
-	if habitat == 'hyena':
-		for i in range(0,4):
-			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
-	elif habitat == 'tiger':
-		for i in range(0,4):
-			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
-	elif habitat == 'lion':
-		for i in range(0,4):
-			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
-	elif habitat == 'bear':
-		for i in range(0,4):
-			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
-	else:
-		print("genzooHabitat function error")
+    """Assign each new animal to a habitat. Each species must have its own habitat."""
+    if habitat == 'hyena':
+        for i in range(0,4):
+            hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+    elif habitat == 'tiger':
+        for i in range(0,4):
+            tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+    elif habitat == 'lion':
+        for i in range(0,4):
+            lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+    elif habitat == 'bear':
+        for i in range(0,4):
+            bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+    else:
+        print("genzooHabitat function error")
 
 # Testing Animal Counters:
 # print(Animal.animal_count)
