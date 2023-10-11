@@ -148,14 +148,17 @@ for element in name_list:
     #  These define the functions that will go into our genZooHabitat for-loop
 def genUniqueAnimalID(habitat):
     if habitat == 'hyena':
-        uniqueID = "Hy0" + str(Hyena.hyena_count)
+        uniqueID = "Hy0" + str(Hyena.hyena_count +1)
         return uniqueID
     elif habitat == 'tiger':
-        Ti.ID = "Ti0" + str(tiger_count)   
+        uniqueID = "Ti0" + str(Tiger.tiger_count +1)
+        return uniqueID        
     elif habitat == 'lion':
-	    Li.ID = "Li0" + str(lion_count)
+        uniqueID = "Li0" + str(Lion.lion_count +1)
+        return uniqueID
     elif habitat == 'bear':
-	    Be.ID = "Be0" + str(bear_count)
+        uniqueID = "Be0" + str(Bear.bear_count +1)
+        return uniqueID
     else:
 	    print("UniqueAnimalID function error")
      
@@ -196,57 +199,37 @@ def genUniqueAnimalID(habitat):
 # 		print("genOrigin function error")
 
 # These for-loops create 4 objects per different animal subclass and adds them to the corresponding animal_objects list.
-hyena_objects = []
-tiger_objects = []
-lion_objects = []
-bear_objects = []
+hyena_habitat = []
+tiger_habitat = []
+lion_habitat = []
+bear_habitat = []
 # for i in range(0,4):
-#     hyena_objects.append(Hyena())
+#     hyena_habitat.append(Hyena())
 # for i in range(0,4):
-#     tiger_objects.append(Tiger())
+#     tiger_habitat.append(Tiger())
 # for i in range(0,4):
-#     lion_objects.append(Lion())
+#     lion_habitat.append(Lion())
 # for i in range(0,4):
-#     bear_objects.append(Bear())
-# merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
+#     bear_habitat.append(Bear())
+# merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
 #print(merged_objects)
 
 # This is a skeleton/conceptual format for how the final program should look like. Based off the format written above ^^^
 def genzooHabitat(habitat):
 	if habitat == 'hyena':
 		for i in range(0,4):
-			# Hy = Hyena()
-			# genUniqueAnimalID(habitat)
-			# *insert functions here*
-			# *insert functions here*
-			# *insert functions here*
-			hyena_objects.append(Hyena(ID = genUniqueAnimalID(habitat)))
-# 	elif habitat == 'tiger':
-# 		for i in range(0,4):
-# 			Ti = Tiger()
-# 			genUniqueAnimalID(habitat)
-# 			*insert functions here*
-# 			*insert functions here*
-# 			*insert functions here*
-# 			hyena_objects.append(Ti)
-# 	elif habitat == 'lion':
-# 		for i in range(0,4):
-# 			Li = Lion()
-# 			genUniqueAnimalID(habitat)
-# 			*insert functions here*
-# 			*insert functions here*
-# 			*insert functions here*
-# 			hyena_objects.append(Li)
-# 	elif habitat == 'bear':
-# 		for i in range(0,4):
-# 			Be = Bear()
-# 			genUniqueAnimalID(habitat)
-# 			*insert functions here*
-# 			*insert functions here*
-# 			*insert functions here*
-# 			hyena_objects.append(Be)
-# 	else:
-# 		print("genzooHabitat function error")
+			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat)))
+	elif habitat == 'tiger':
+		for i in range(0,4):
+			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat)))
+	elif habitat == 'lion':
+		for i in range(0,4):
+			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat)))
+	elif habitat == 'bear':
+		for i in range(0,4):
+			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat)))
+	else:
+		print("genzooHabitat function error")
 
 # Testing Animal Counters:
 # print(Animal.animal_count)
@@ -257,4 +240,10 @@ def genzooHabitat(habitat):
 
 # This is just a test run:
 genzooHabitat('hyena')
-print(hyena_objects[2].ID)
+genzooHabitat('tiger')
+genzooHabitat('lion')
+genzooHabitat('bear')
+print(hyena_habitat[0].ID)
+print(tiger_habitat[1].ID)
+print(lion_habitat[2].ID)
+print(bear_habitat[3].ID)
