@@ -145,7 +145,7 @@ for element in name_list:
 # print(Bear_Names)
 # print(Tiger_Names)
 
-    #  These define the functions that will go into our genZooHabitat for-loop
+#####  These define the functions that will go into our genZooHabitat for-loop ######
 def genUniqueAnimalID(habitat):
     if habitat == 'hyena':
         uniqueID = "Hy0" + str(Hyena.hyena_count +1)
@@ -168,11 +168,12 @@ def genUniqueAnimalID(habitat):
 # 	else:
 # 		print("genBirthday function error")
 
-# def genAge():
-# 	arrivingAnimals_list[0][0][0] + "years old"
-# 	self.age
-# 	else:
-# 		print("genAge function error")
+def genAge(habitat, i):
+    if habitat == 'hyena':
+            age = str(arriving_Hyenas[i][0][0]) + ' years old'
+            return age
+    else:
+        print("genAge function error")
 
 # def genColor():
 # 	arrivingAnimals_list[2]
@@ -218,7 +219,7 @@ bear_habitat = []
 def genzooHabitat(habitat):
 	if habitat == 'hyena':
 		for i in range(0,4):
-			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat)))
+			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
 			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat)))
@@ -238,12 +239,19 @@ def genzooHabitat(habitat):
 # print(Bear.bear_count)
 # print(Tiger.tiger_count)
 
-# This is just a test run:
+# These 4 functions populate our habitats with the arriving Animals
 genzooHabitat('hyena')
 genzooHabitat('tiger')
 genzooHabitat('lion')
 genzooHabitat('bear')
-print(hyena_habitat[0].ID)
+print(hyena_habitat[0].age)
+print(hyena_habitat[1].age)
+print(hyena_habitat[2].age)
+print(hyena_habitat[3].age)
 print(tiger_habitat[1].ID)
 print(lion_habitat[2].ID)
 print(bear_habitat[3].ID)
+
+# for hyena in arriving_Hyenas:
+#     age = str(hyena[0][0]) + ' years old'
+#     print(age)
