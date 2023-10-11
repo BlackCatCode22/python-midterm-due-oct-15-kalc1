@@ -184,11 +184,12 @@ def genAge(habitat, i):
     else:
         print("genAge function error")
 
-# def genColor():
-# 	arrivingAnimals_list[2]
-# 	self.color
-# 	else:
-# 		print("genColor function error")
+def genColor(habitat, i):
+    if habitat == 'hyena':
+        color = str(arriving_Hyenas[i][2])
+        return color
+    else:
+        print("genColor function error")
 
 # def genSex():
 # 	arrivingAnimals_list[0][3]
@@ -218,7 +219,7 @@ bear_habitat = []
 def genzooHabitat(habitat):
 	if habitat == 'hyena':
 		for i in range(0,4):
-			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
+			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
 			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
@@ -249,14 +250,12 @@ genzooHabitat('bear')
 # print(merged_objects)
 
 # These print functions serve to test our outputs
-print(hyena_habitat[0].age)
-print(tiger_habitat[1].age)
-print(lion_habitat[2].age)
-print(bear_habitat[3].age)
-print(tiger_habitat[1].ID)
-print(lion_habitat[2].ID)
-print(bear_habitat[3].ID)
+print(hyena_habitat[0].color)
+print(hyena_habitat[1].color)
+print(hyena_habitat[3].color)
+# print(bear_habitat[3].age)
+# print(tiger_habitat[1].ID)
+# print(lion_habitat[2].ID)
+# print(bear_habitat[3].ID)
 
-# for hyena in arriving_Hyenas:
-#     age = str(hyena[0][0]) + ' years old'
-#     print(age)
+# print(arriving_Hyenas[0][2])
