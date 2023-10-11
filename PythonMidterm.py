@@ -145,8 +145,54 @@ for element in name_list:
 # print(Bear_Names)
 # print(Tiger_Names)
 
+#  These define the functions that will go into our 
+# def genUniqueAnimalID(habitat):
+# 	if habitat = hyena:
+# 		Hy.ID = "Hy0" + str(hyena_count)
+# 	elif habitat = tiger:
+# 		Ti.ID = "Ti0" + str(tiger_count)
+# 	elif habitat = lion:
+# 		Li.ID = "Li0" + str(lion_count)
+# 	elif habitat = bear:
+# 		Be.ID = "Be0" + str(bear_count)
+# 	else:
+# 		print("UniqueAnimalID function error")
 
+# def genBirthDay():
+# 	arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
+# 	self.birthday
+# 	else:
+# 		print("genBirthday function error")
 
+# def genAge():
+# 	arrivingAnimals_list[0][0][0] + "years old"
+# 	self.age
+# 	else:
+# 		print("genAge function error")
+
+# def genColor():
+# 	arrivingAnimals_list[2]
+# 	self.color
+# 	else:
+# 		print("genColor function error")
+
+# def genSex():
+# 	arrivingAnimals_list[0][3]
+# 	self.sex
+# 	else:
+# 		print("gensex function error")
+
+# def genWeight():
+# 	arrivingAnimals_list[3]
+# 	self.weight
+# 	else:
+# 		print("genWeight function error")
+
+# def genOrigin():
+# 	arrivingAnimals_list[4] + arrivingAnimals_list[5]
+# 	self.origin
+# 	else:
+# 		print("genOrigin function error")
 
 
 
