@@ -220,6 +220,15 @@ def genWeight(habitat, i):
     if habitat == 'hyena':
         weight = str(arriving_Hyenas[i][3])
         return weight
+    if habitat == 'tiger':
+        weight = str(arriving_Tigers[i][3])
+        return weight
+    if habitat == 'lion':
+        weight = str(arriving_Lions[i][3])
+        return weight
+    if habitat == 'bear':
+        weight = str(arriving_Bears[i][3])
+        return weight
     else:
         print("genWeight function error")
 # 	arrivingAnimals_list[3]
@@ -245,13 +254,13 @@ def genzooHabitat(habitat):
 			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
-			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i)))
+			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
 	elif habitat == 'lion':
 		for i in range(0,4):
-			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i)))
+			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
 	elif habitat == 'bear':
 		for i in range(0,4):
-			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i)))
+			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
 	else:
 		print("genzooHabitat function error")
 
@@ -276,8 +285,8 @@ genzooHabitat('bear')
 print(hyena_habitat[0].weight)
 print(hyena_habitat[1].weight)
 print(hyena_habitat[3].weight)
-# print(tiger_habitat[1].weight)
-# print(lion_habitat[2].weight)
-# print(bear_habitat[3].weight)
+print(tiger_habitat[1].weight)
+print(lion_habitat[2].weight)
+print(bear_habitat[3].weight)
 
 # print(arriving_Hyenas[0][2])
