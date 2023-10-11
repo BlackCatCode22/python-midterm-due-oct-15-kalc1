@@ -230,8 +230,6 @@ def genzooHabitat(habitat):
 			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	else:
 		print("genzooHabitat function error")
-# merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
-#print(merged_objects)
 
 # Testing Animal Counters:
 # print(Animal.animal_count)
@@ -245,6 +243,10 @@ genzooHabitat('hyena')
 genzooHabitat('tiger')
 genzooHabitat('lion')
 genzooHabitat('bear')
+
+# merged_objects combines all 4 animal habitats into one list.
+# merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
+# print(merged_objects)
 
 # These print functions serve to test our outputs
 print(hyena_habitat[0].age)
