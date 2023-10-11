@@ -236,10 +236,17 @@ def genOrigin(habitat, i):
     if habitat == 'hyena':
         origin = str(arriving_Hyenas[i][4] + ',' + arriving_Hyenas[i][5])
         return origin
-# 	arrivingAnimals_list[4] + arrivingAnimals_list[5]
-# 	self.origin
-# 	else:
-# 		print("genOrigin function error")
+    if habitat == 'tiger':
+        origin = str(arriving_Tigers[i][4] + ',' + arriving_Tigers[i][5])
+        return origin
+    if habitat == 'lion':
+        origin = str(arriving_Lions[i][4] + ',' + arriving_Lions[i][5])
+        return origin
+    if habitat == 'bear':
+        origin = str(arriving_Bears[i][4] + ',' + arriving_Bears[i][5])
+        return origin
+    else:
+        print("genOrigin function error")
 
 # These for-loops create 4 objects per different animal subclass and adds them to the corresponding animal_objects list.
 hyena_habitat = []
@@ -254,13 +261,13 @@ def genzooHabitat(habitat):
 			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
-			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
+			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
 	elif habitat == 'lion':
 		for i in range(0,4):
-			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
+			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
 	elif habitat == 'bear':
 		for i in range(0,4):
-			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
+			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
 	else:
 		print("genzooHabitat function error")
 
@@ -285,8 +292,8 @@ genzooHabitat('bear')
 print(hyena_habitat[0].origin)
 print(hyena_habitat[1].origin)
 print(hyena_habitat[3].origin)
-# print(tiger_habitat[1].origin)
-# print(lion_habitat[2].origin)
-# print(bear_habitat[3].origin)
+print(tiger_habitat[1].origin)
+print(lion_habitat[2].origin)
+print(bear_habitat[3].origin)
 
 # print(arriving_Hyenas[0][2])
