@@ -213,18 +213,8 @@ hyena_habitat = []
 tiger_habitat = []
 lion_habitat = []
 bear_habitat = []
-# for i in range(0,4):
-#     hyena_habitat.append(Hyena())
-# for i in range(0,4):
-#     tiger_habitat.append(Tiger())
-# for i in range(0,4):
-#     lion_habitat.append(Lion())
-# for i in range(0,4):
-#     bear_habitat.append(Bear())
-# merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
-#print(merged_objects)
 
-# This is a skeleton/conceptual format for how the final program should look like. Based off the format written above ^^^
+# This function defines a program which creates and adds animal objects to the appropriate habitat. As the animals are added, the appropriate attributes are given using various functions defined above. 
 def genzooHabitat(habitat):
 	if habitat == 'hyena':
 		for i in range(0,4):
@@ -240,6 +230,8 @@ def genzooHabitat(habitat):
 			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	else:
 		print("genzooHabitat function error")
+# merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
+#print(merged_objects)
 
 # Testing Animal Counters:
 # print(Animal.animal_count)
