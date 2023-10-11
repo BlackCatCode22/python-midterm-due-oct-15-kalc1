@@ -27,7 +27,7 @@ class Animal:
         self.ID = ID # def genUniqueAnimalID(): 
         self.habitat = habitat # def genZooHabitat():
         
-        Animal.animal_count += 1
+        Animal.animal_count += 1  
     
 class Hyena(Animal):
     # A counter to keep track of the number of Hyenas
@@ -145,19 +145,20 @@ for element in name_list:
 # print(Bear_Names)
 # print(Tiger_Names)
 
-#  These define the functions that will go into our 
-# def genUniqueAnimalID(habitat):
-# 	if habitat = hyena:
-# 		Hy.ID = "Hy0" + str(hyena_count)
-# 	elif habitat = tiger:
-# 		Ti.ID = "Ti0" + str(tiger_count)
-# 	elif habitat = lion:
-# 		Li.ID = "Li0" + str(lion_count)
-# 	elif habitat = bear:
-# 		Be.ID = "Be0" + str(bear_count)
-# 	else:
-# 		print("UniqueAnimalID function error")
-
+    #  These define the functions that will go into our genZooHabitat for-loop
+def genUniqueAnimalID(habitat):
+    if habitat == 'hyena':
+        uniqueID = "Hy0" + str(Hyena.hyena_count)
+        return uniqueID
+    elif habitat == 'tiger':
+        Ti.ID = "Ti0" + str(tiger_count)   
+    elif habitat == 'lion':
+	    Li.ID = "Li0" + str(lion_count)
+    elif habitat == 'bear':
+	    Be.ID = "Be0" + str(bear_count)
+    else:
+	    print("UniqueAnimalID function error")
+     
 # def genBirthDay():
 # 	arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
 # 	self.birthday
@@ -194,38 +195,33 @@ for element in name_list:
 # 	else:
 # 		print("genOrigin function error")
 
-
-
-
-
-
 # These for-loops create 4 objects per different animal subclass and adds them to the corresponding animal_objects list.
 hyena_objects = []
 tiger_objects = []
 lion_objects = []
 bear_objects = []
-for i in range(0,4):
-    hyena_objects.append(Hyena())
-for i in range(0,4):
-    tiger_objects.append(Tiger())
-for i in range(0,4):
-    lion_objects.append(Lion())
-for i in range(0,4):
-    bear_objects.append(Bear())
-merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
+# for i in range(0,4):
+#     hyena_objects.append(Hyena())
+# for i in range(0,4):
+#     tiger_objects.append(Tiger())
+# for i in range(0,4):
+#     lion_objects.append(Lion())
+# for i in range(0,4):
+#     bear_objects.append(Bear())
+# merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
 #print(merged_objects)
 
-# This is a skeleton/conceptual format for how the final program should look like:
-# def genzooHabitat(habitat):
-# 	if habitat = 'hyena':
-# 		for i in range(0,4):
-# 			Hy = Hyena()
-# 			genUniqueAnimalID(habitat)
-# 			*insert functions here*
-# 			*insert functions here*
-# 			*insert functions here*
-# 			hyena_objects.append(Hy)
-# 	elif habitat = 'tiger':
+# This is a skeleton/conceptual format for how the final program should look like. Based off the format written above ^^^
+def genzooHabitat(habitat):
+	if habitat == 'hyena':
+		for i in range(0,4):
+			# Hy = Hyena()
+			# genUniqueAnimalID(habitat)
+			# *insert functions here*
+			# *insert functions here*
+			# *insert functions here*
+			hyena_objects.append(Hyena(ID = genUniqueAnimalID(habitat)))
+# 	elif habitat == 'tiger':
 # 		for i in range(0,4):
 # 			Ti = Tiger()
 # 			genUniqueAnimalID(habitat)
@@ -233,7 +229,7 @@ merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
 # 			*insert functions here*
 # 			*insert functions here*
 # 			hyena_objects.append(Ti)
-# 	elif habitat = 'lion':
+# 	elif habitat == 'lion':
 # 		for i in range(0,4):
 # 			Li = Lion()
 # 			genUniqueAnimalID(habitat)
@@ -241,7 +237,7 @@ merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
 # 			*insert functions here*
 # 			*insert functions here*
 # 			hyena_objects.append(Li)
-# 	elif habitat = 'bear':
+# 	elif habitat == 'bear':
 # 		for i in range(0,4):
 # 			Be = Bear()
 # 			genUniqueAnimalID(habitat)
@@ -258,3 +254,7 @@ merged_objects = (hyena_objects+tiger_objects+lion_objects+bear_objects)
 # print(Hyena.hyena_count)
 # print(Bear.bear_count)
 # print(Tiger.tiger_count)
+
+# This is just a test run:
+genzooHabitat('hyena')
+print(hyena_objects[2].ID)
