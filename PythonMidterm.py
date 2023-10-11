@@ -172,6 +172,15 @@ def genAge(habitat, i):
     if habitat == 'hyena':
             age = str(arriving_Hyenas[i][0][0]) + ' years old'
             return age
+    elif habitat == 'tiger':
+            age = str(arriving_Tigers[i][0][0]) + ' years old'
+            return age
+    elif habitat == 'lion':
+            age = str(arriving_Lions[i][0][0]) + ' years old'
+            return age
+    elif habitat == 'bear':
+            age = str(arriving_Bears[i][0][0]) + ' years old'
+            return age
     else:
         print("genAge function error")
 
@@ -222,13 +231,13 @@ def genzooHabitat(habitat):
 			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
-			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat)))
+			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	elif habitat == 'lion':
 		for i in range(0,4):
-			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat)))
+			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	elif habitat == 'bear':
 		for i in range(0,4):
-			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat)))
+			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
 	else:
 		print("genzooHabitat function error")
 
@@ -244,10 +253,12 @@ genzooHabitat('hyena')
 genzooHabitat('tiger')
 genzooHabitat('lion')
 genzooHabitat('bear')
+
+# These print functions serve to test our outputs
 print(hyena_habitat[0].age)
-print(hyena_habitat[1].age)
-print(hyena_habitat[2].age)
-print(hyena_habitat[3].age)
+print(tiger_habitat[1].age)
+print(lion_habitat[2].age)
+print(bear_habitat[3].age)
 print(tiger_habitat[1].ID)
 print(lion_habitat[2].ID)
 print(bear_habitat[3].ID)
