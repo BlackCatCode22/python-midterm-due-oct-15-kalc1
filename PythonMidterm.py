@@ -188,6 +188,15 @@ def genColor(habitat, i):
     if habitat == 'hyena':
         color = str(arriving_Hyenas[i][2])
         return color
+    if habitat == 'tiger':
+        color = str(arriving_Tigers[i][2])
+        return color
+    if habitat == 'lion':
+        color = str(arriving_Lions[i][2])
+        return color
+    if habitat == 'bear':
+        color = str(arriving_Bears[i][2])
+        return color
     else:
         print("genColor function error")
 
@@ -222,13 +231,13 @@ def genzooHabitat(habitat):
 			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
-			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
+			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i)))
 	elif habitat == 'lion':
 		for i in range(0,4):
-			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
+			lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i)))
 	elif habitat == 'bear':
 		for i in range(0,4):
-			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i)))
+			bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i)))
 	else:
 		print("genzooHabitat function error")
 
@@ -253,9 +262,8 @@ genzooHabitat('bear')
 print(hyena_habitat[0].color)
 print(hyena_habitat[1].color)
 print(hyena_habitat[3].color)
-# print(bear_habitat[3].age)
-# print(tiger_habitat[1].ID)
-# print(lion_habitat[2].ID)
-# print(bear_habitat[3].ID)
+print(tiger_habitat[1].color)
+print(lion_habitat[2].color)
+print(bear_habitat[3].color)
 
 # print(arriving_Hyenas[0][2])
