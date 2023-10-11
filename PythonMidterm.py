@@ -231,11 +231,11 @@ def genWeight(habitat, i):
         return weight
     else:
         print("genWeight function error")
-# 	arrivingAnimals_list[3]
-# 	self.weight
 
-
-# def genOrigin():
+def genOrigin(habitat, i):
+    if habitat == 'hyena':
+        origin = str(arriving_Hyenas[i][4] + ',' + arriving_Hyenas[i][5])
+        return origin
 # 	arrivingAnimals_list[4] + arrivingAnimals_list[5]
 # 	self.origin
 # 	else:
@@ -251,7 +251,7 @@ bear_habitat = []
 def genzooHabitat(habitat):
 	if habitat == 'hyena':
 		for i in range(0,4):
-			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
+			hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
 	elif habitat == 'tiger':
 		for i in range(0,4):
 			tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i)))
@@ -282,11 +282,11 @@ genzooHabitat('bear')
 # print(merged_objects)
 
 # These print functions serve to test our outputs
-print(hyena_habitat[0].weight)
-print(hyena_habitat[1].weight)
-print(hyena_habitat[3].weight)
-print(tiger_habitat[1].weight)
-print(lion_habitat[2].weight)
-print(bear_habitat[3].weight)
+print(hyena_habitat[0].origin)
+print(hyena_habitat[1].origin)
+print(hyena_habitat[3].origin)
+# print(tiger_habitat[1].origin)
+# print(lion_habitat[2].origin)
+# print(bear_habitat[3].origin)
 
 # print(arriving_Hyenas[0][2])
