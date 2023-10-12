@@ -20,10 +20,6 @@ class Animal:
         self.weight = weight
         self.origin = origin
         self.arrived = arrived
-        # self.Hyena = Hyena
-        # self.Lion = Lion
-        # self.Bear = Bear 
-        # self.Tiger = Tiger
         self.ID = ID 
         self.habitat = habitat 
         
@@ -45,7 +41,6 @@ class Tiger(Animal):
     def __init__(self, name='', age='', birthday='', sex='', season_born='', color='', weight='', origin='', ID='', habitat='', arrived=''):
         super().__init__(name, age, birthday, sex, season_born, color, weight, origin, ID, habitat, arrived)
          
-    
         Tiger.tiger_count += 1
 
 class Lion(Animal):
