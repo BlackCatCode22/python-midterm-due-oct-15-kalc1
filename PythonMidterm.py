@@ -174,24 +174,27 @@ def genBirthDay(habitat, i):
     """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
     if habitat == 'hyena':
         season_born = arriving_Hyenas[i][1]
-        if season_born == 'born in spring'
+        if season_born == ' born in spring':
         # today - born is supposed to represent (today's year - how old they are(arriving_Hyenas[i][0][0]))
-            birthday = date(today - born, 3, 21)
+            birthday = date(date.today().year - int(arriving_Hyenas[i][0][0]), 3, 21)
             return birthday
-        elif season_born == 'born in fall'
-            birthday =  date(today - born, 9, 21)
+        elif season_born == ' born in fall':
+            birthday =  date(date.today().year - int(arriving_Hyenas[i][0][0]), 9, 21)
             return birthday
-        elif season_born == 'born in winter'
-            birthday = date(today - born, 12, 21)
+        elif season_born == ' born in winter':
+            birthday = date(date.today().year - int(arriving_Hyenas[i][0][0]), 12, 21)
             return birthday
-        elif season_born == 'born in summer'
-            birthday = date(today - born, 6, 21)
+        elif season_born == ' born in summer':
+            birthday = date(date.today().year - int(arriving_Hyenas[i][0][0]), 6, 21)
             return birthday
+        else:
+            birthday = date.today().year - int(arriving_Hyenas[i][0][0])
+            return ('Year ' + str(birthday))
             
-    arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
-	self.birthday
-	else:
-		print("genBirthday function error")
+    # arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
+	# self.birthday
+	# else:
+	# 	print("genBirthday function error")
 
 def genAge(habitat, i):
     if habitat == 'hyena':
@@ -290,7 +293,8 @@ def genzooHabitat(habitat):
                                     sex = genSex(habitat, i), 
                                     weight = genWeight(habitat, i), 
                                     origin = genOrigin(habitat, i), 
-                                    name = genAnimalName(habitat, i)))
+                                    name = genAnimalName(habitat, i),
+                                    birthday = genBirthDay(habitat, i)))
     elif habitat == 'tiger':
         for i in range(0,4):
             tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat),
@@ -339,11 +343,11 @@ merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
 # print(merged_objects)
 
 # These print functions serve to test our outputs
-# print(hyena_habitat[0].name)
-# print(hyena_habitat[1].name)
-# print(hyena_habitat[3].name)
-# print(tiger_habitat[1].name)
-# print(lion_habitat[2].name)
-# print(bear_habitat[3].name)
+print(hyena_habitat[0].birthday)
+print(hyena_habitat[1].birthday)
+print(hyena_habitat[3].birthday)
+# print(tiger_habitat[1].birthday)
+# print(lion_habitat[2].birthday)
+# print(bear_habitat[3].birthday)
 
-# print(arriving_Hyenas[0][2])
+# print(arriving_Hyenas[0][0][0])
