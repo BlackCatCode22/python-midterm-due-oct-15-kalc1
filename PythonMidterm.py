@@ -166,7 +166,7 @@ def genUniqueAnimalID(habitat):
 def genAnimalName(habitat, i):
     """Create an animal name based on input from a community fundraiser (animalNames.txt)"""
     if habitat == 'hyena':
-        name = Hyena_Names[0].split(',')[i]
+        name = Hyena_Names[0].split(',')[i].strip()
         return name    
      
 # def genBirthDay():
