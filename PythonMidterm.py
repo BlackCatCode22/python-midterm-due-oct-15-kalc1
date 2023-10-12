@@ -126,7 +126,7 @@ for name in name_list:
         name_list.pop(name_list.index(''))
 # print(name_list)
 
-# Create 4 lists of names: 
+# Create 4 lists of names seperated by animal taken from name_list above: 
 Hyena_Names = []
 Lion_Names = []
 Bear_Names = []
@@ -140,7 +140,7 @@ for element in name_list:
         Bear_Names.append(name_list[name_list.index(element)+1])  
     if element == 'Tiger Names:':
         Tiger_Names.append(name_list[name_list.index(element)+1])      
-# print(Hyena_Names)                           
+#print(len(Hyena_Names[0].split(',')))
 # print(Lion_Names)
 # print(Bear_Names)
 # print(Tiger_Names)
@@ -163,8 +163,11 @@ def genUniqueAnimalID(habitat):
     else:
 	    print("UniqueAnimalID function error")
      
-#  def genAnimalName(): 
-    # """Create an animal name based on input from a community fundraiser (animalNames.txt)"""
+def genAnimalName(habitat, i):
+    """Create an animal name based on input from a community fundraiser (animalNames.txt)"""
+    if habitat == 'hyena':
+        name = Hyena_Names[0].split(',')[i]
+        return name    
      
 # def genBirthDay():
     # """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
@@ -264,7 +267,7 @@ def genzooHabitat(habitat):
     """Assign each new animal to a habitat. Each species must have its own habitat."""
     if habitat == 'hyena':
         for i in range(0,4):
-            hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+            hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i), name = genAnimalName(habitat, i)))
     elif habitat == 'tiger':
         for i in range(0,4):
             tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
@@ -295,11 +298,11 @@ genzooHabitat('bear')
 # print(merged_objects)
 
 # These print functions serve to test our outputs
-print(hyena_habitat[0].origin)
-print(hyena_habitat[1].origin)
-print(hyena_habitat[3].origin)
-print(tiger_habitat[1].origin)
-print(lion_habitat[2].origin)
-print(bear_habitat[3].origin)
+print(hyena_habitat[0].name)
+print(hyena_habitat[1].name)
+print(hyena_habitat[3].name)
+# print(tiger_habitat[1].name)
+# print(lion_habitat[2].name)
+# print(bear_habitat[3].name)
 
 # print(arriving_Hyenas[0][2])
