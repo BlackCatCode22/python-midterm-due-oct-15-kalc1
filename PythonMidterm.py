@@ -167,7 +167,18 @@ def genAnimalName(habitat, i):
     """Create an animal name based on input from a community fundraiser (animalNames.txt)"""
     if habitat == 'hyena':
         name = Hyena_Names[0].split(',')[i].strip()
-        return name    
+        return name  
+    if habitat == 'tiger':
+        name = Tiger_Names[0].split(',')[i].strip()
+        return name  
+    if habitat == 'lion':
+        name = Lion_Names[0].split(',')[i].strip()
+        return name  
+    if habitat == 'bear':
+        name = Bear_Names[0].split(',')[i].strip()
+        return name  
+    else:
+        print("AnimalName function error")
      
 # def genBirthDay():
     # """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
@@ -270,13 +281,13 @@ def genzooHabitat(habitat):
             hyena_habitat.append(Hyena(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i), name = genAnimalName(habitat, i)))
     elif habitat == 'tiger':
         for i in range(0,4):
-            tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+            tiger_habitat.append(Tiger(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i), name = genAnimalName(habitat, i)))
     elif habitat == 'lion':
         for i in range(0,4):
-            lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+            lion_habitat.append(Lion(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i), name = genAnimalName(habitat, i)))
     elif habitat == 'bear':
         for i in range(0,4):
-            bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i)))
+            bear_habitat.append(Bear(ID = genUniqueAnimalID(habitat), age = genAge(habitat, i), color = genColor(habitat, i), sex = genSex(habitat, i), weight = genWeight(habitat, i), origin = genOrigin(habitat, i), name = genAnimalName(habitat, i)))
     else:
         print("genzooHabitat function error")
 
@@ -301,8 +312,8 @@ genzooHabitat('bear')
 print(hyena_habitat[0].name)
 print(hyena_habitat[1].name)
 print(hyena_habitat[3].name)
-# print(tiger_habitat[1].name)
-# print(lion_habitat[2].name)
-# print(bear_habitat[3].name)
+print(tiger_habitat[1].name)
+print(lion_habitat[2].name)
+print(bear_habitat[3].name)
 
 # print(arriving_Hyenas[0][2])
