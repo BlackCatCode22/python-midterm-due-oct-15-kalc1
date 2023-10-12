@@ -4,7 +4,7 @@
 # Date: 09/29/23
 # Class: CIT 95
 
-import datetime     #This is used 
+from datetime import date    # This is used for genBirthDay()
 #******* Start of Classes********
 class Animal:
     # A counter to keep track of the number of animals we have.    
@@ -170,12 +170,28 @@ def genAnimalName(habitat, i):
     else:
         print("AnimalName function error")
      
-# def genBirthDay():
-    # """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
-# 	arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
-# 	self.birthday
-# 	else:
-# 		print("genBirthday function error")
+def genBirthDay(habitat, i):
+    """Calculates a birthday from the information received from the originating zoo. Handles cases where the birth season is unknown."""
+    if habitat == 'hyena':
+        season_born = arriving_Hyenas[i][1]
+        if season_born == 'born in spring'
+        # today - born is supposed to represent (today's year - how old they are(arriving_Hyenas[i][0][0]))
+            birthday = date(today - born, 3, 21)
+            return birthday
+        elif season_born == 'born in fall'
+            birthday =  date(today - born, 9, 21)
+            return birthday
+        elif season_born == 'born in winter'
+            birthday = date(today - born, 12, 21)
+            return birthday
+        elif season_born == 'born in summer'
+            birthday = date(today - born, 6, 21)
+            return birthday
+            
+    arrivingAnimals_list[1] <- modified using datetime.date(year, month, day)
+	self.birthday
+	else:
+		print("genBirthday function error")
 
 def genAge(habitat, i):
     if habitat == 'hyena':
