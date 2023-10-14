@@ -389,15 +389,20 @@ merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
 # print(merged_objects)
 
 # These print functions serve to test our outputs
-print(hyena_habitat[0].birthday)
-print(hyena_habitat[1].birthday)
-print(hyena_habitat[3].birthday)
-print(tiger_habitat[1].birthday)
-print(lion_habitat[2].birthday)
-print(bear_habitat[3].birthday)
+# print(hyena_habitat[0].birthday)
+# print(hyena_habitat[1].birthday)
+# print(hyena_habitat[3].birthday)
+# print(tiger_habitat[1].birthday)
+# print(lion_habitat[2].birthday)
+# print(bear_habitat[3].birthday)
 
-# print(arriving_Hyenas[0][0][0])
+# This function enables us to write 
+Zoo_Animals_Report = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-midterm-due-oct-15-kalc1\\midtermOutput.txt', 'w') 
 
+# This function outputs the necessary information into the zoo report by drawing out data from each object within the 4 habitats using f-strings.
+Zoo_Animals_Report.write("Hyena Habitat:\n\n")
+for hyena in hyena_habitat:
+    Zoo_Animals_Report.write
 
-Zoo_Animals_Report = open('midtermOutput.txt', 'w') 
+arrivingAnimalstxt.close()
 Zoo_Animals_Report.close()
