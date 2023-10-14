@@ -397,3 +397,7 @@ print(lion_habitat[2].birthday)
 print(bear_habitat[3].birthday)
 
 # print(arriving_Hyenas[0][0][0])
+
+
+Zoo_Animals_Report = open('midtermOutput.txt', 'w') 
+Zoo_Animals_Report.close()
