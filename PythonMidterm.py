@@ -402,7 +402,21 @@ Zoo_Animals_Report = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-mid
 # This function outputs the necessary information into the zoo report by drawing out data from each object within the 4 habitats using f-strings.
 Zoo_Animals_Report.write("Hyena Habitat:\n\n")
 for hyena in hyena_habitat:
-    Zoo_Animals_Report.write
+    Zoo_Animals_Report.write()
 
+Zoo_Animals_Report.write("Lion Habitat:\n\n")
+for lion in lion_habitat:
+    Zoo_Animals_Report.write()
+
+Zoo_Animals_Report.write("Tiger Habitat:\n\n")
+for tiger in tiger_habitat:
+    Zoo_Animals_Report.write()
+
+Zoo_Animals_Report.write("Bear Habitat:\n\n")
+for bear in bear_habitat:
+    Zoo_Animals_Report.write()
+    
+# These 3 functions close out the .txt files used in this program
+animalNamestxt.close()    
 arrivingAnimalstxt.close()
 Zoo_Animals_Report.close()
