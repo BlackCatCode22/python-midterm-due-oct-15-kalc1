@@ -1,6 +1,15 @@
 Hyena Habitat:
 
-Hy01; Shenzi; 4 years old; birth date 2019-03-21;  tan color; female;  70 pounds;  from Friguia Park, Tunisia
-Hy02; Banzai; 12 years old; birth date 2011-09-21;  brown color; male;  150 pounds;  from Friguia Park, Tunisia
-Hy03; Ed; 4 years old; birth date 2019-03-21;  black color; male;  120 pounds;  from Friguia Park, Tunisia
-Hy04; Zig; 8 years old; birth date Year 2015;  black and tan striped color; female;  105 pounds;  from Friguia Park, Tunisia
+Hy01; Shenzi; 4 years old; birth date 2019-03-21; tan color; female; 70 pounds; from Friguia Park, Tunisia
+Hy02; Banzai; 12 years old; birth date 2011-09-21; brown color; male; 150 pounds; from Friguia Park, Tunisia
+Hy03; Ed; 4 years old; birth date 2019-03-21; black color; male; 120 pounds; from Friguia Park, Tunisia
+Hy04; Zig; 8 years old; birth date year is 2015; black and tan striped color; female; 105 pounds; from Friguia Park, Tunisia
+
+Lion Habitat:
+
+
+Tiger Habitat:
+
+
+Bear Habitat:
+

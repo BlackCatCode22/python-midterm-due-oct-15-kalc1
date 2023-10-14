@@ -184,7 +184,7 @@ def genBirthDay(habitat, i):
             return birthday
         else:
             birthday = date.today().year - int(arriving_Hyenas[i][0][0])
-            return ('Year ' + str(birthday))
+            return ('year is ' + str(birthday))
     if habitat == 'tiger':
         season_born = arriving_Tigers[i][1]
         if season_born == ' born in spring':
@@ -201,7 +201,7 @@ def genBirthDay(habitat, i):
             return birthday
         else:
             birthday = date.today().year - int(arriving_Tigers[i][0][0])
-            return ('Year ' + str(birthday))
+            return ('year is ' + str(birthday))
     if habitat == 'lion':
         season_born = arriving_Lions[i][1]
         if season_born == ' born in spring':
@@ -218,7 +218,7 @@ def genBirthDay(habitat, i):
             return birthday
         else:
             birthday = date.today().year - int(arriving_Lions[i][0][0])
-            return ('Year ' + str(birthday))
+            return ('year is ' + str(birthday))
     if habitat == 'bear':
         season_born = arriving_Bears[i][1]
         if season_born == ' born in spring':
@@ -235,7 +235,7 @@ def genBirthDay(habitat, i):
             return birthday
         else:
             birthday = date.today().year - int(arriving_Bears[i][0][0])
-            return ('Year ' + str(birthday))
+            return ('year is ' + str(birthday))
     else:
 	    print("genBirthday function error")
 
@@ -402,7 +402,7 @@ Zoo_Animals_Report = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-mid
 # This function outputs the necessary information into the zoo report by drawing out data from each object within the 4 habitats using f-strings.
 Zoo_Animals_Report.write("Hyena Habitat:\n\n")
 for hyena in hyena_habitat:
-    Zoo_Animals_Report.write(f'{hyena.ID}; {hyena.name}; {hyena.age}; birth date {hyena.birthday}; {hyena.color}; {hyena.sex}; {hyena.weight}; {hyena.origin}\n')
+    Zoo_Animals_Report.write(f'{hyena.ID}; {hyena.name}; {hyena.age}; birth date {hyena.birthday};{hyena.color}; {hyena.sex};{hyena.weight};{hyena.origin}\n')
     
 #                                     ID = genUniqueAnimalID(habitat),
 #                                     age = genAge(habitat, i), 
@@ -413,15 +413,15 @@ for hyena in hyena_habitat:
 #                                     name = genAnimalName(habitat, i),
 #                                     birthday = genBirthDay(habitat, i)))
 
-# Zoo_Animals_Report.write("Lion Habitat:\n\n")
+Zoo_Animals_Report.write("\nLion Habitat:\n\n")
 # for lion in lion_habitat:
 #     Zoo_Animals_Report.write()
 
-# Zoo_Animals_Report.write("Tiger Habitat:\n\n")
+Zoo_Animals_Report.write("\nTiger Habitat:\n\n")
 # for tiger in tiger_habitat:
 #     Zoo_Animals_Report.write()
 
-# Zoo_Animals_Report.write("Bear Habitat:\n\n")
+Zoo_Animals_Report.write("\nBear Habitat:\n\n")
 # for bear in bear_habitat:
 #     Zoo_Animals_Report.write()
     
