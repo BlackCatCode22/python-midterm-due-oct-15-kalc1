@@ -25,3 +25,9 @@ Be01; Yogi; 7 years old; birth date 2016-03-21; brown color; male; 320 pounds; f
 Be02; Smokey; 25 years old; birth date 1998-03-21; black color; female; 425 pounds; from Woodland park Zoo, Washington
 Be03; Paddington; 4 years old; birth date 2019-09-21; black color; female; 355 pounds; from Woodland park Zoo, Washington
 Be04; Lippy; 4 years old; birth date 2019-03-21; brown color; male; 405 pounds; from Alaska Zoo, Alaska
+
+Number of arriving hyenas: 4
+Number of arriving lions: 4
+Number of arriving tigers: 4
+Number of arriving bears: 4
+Total arriving animals: 16

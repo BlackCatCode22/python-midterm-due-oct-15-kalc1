@@ -377,13 +377,6 @@ genzooHabitat('tiger')
 genzooHabitat('lion')
 genzooHabitat('bear')
 
-# Testing Animal Counters:
-# print(Animal.animal_count)
-# print(Lion.lion_count)
-# print(Hyena.hyena_count)
-# print(Bear.bear_count)
-# print(Tiger.tiger_count)
-
 # merged_objects combines all 4 animal habitats into one list.
 merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
 # print(merged_objects)
@@ -407,6 +400,12 @@ for tiger in tiger_habitat:
 Zoo_Animals_Report.write("\nBear Habitat:\n\n")
 for bear in bear_habitat:
     Zoo_Animals_Report.write(f'{bear.ID}; {bear.name}; {bear.age}; birth date {bear.birthday};{bear.color}; {bear.sex};{bear.weight};{bear.origin}\n')
+    
+Zoo_Animals_Report.write(f'\nNumber of arriving hyenas: {Hyena.hyena_count}')
+Zoo_Animals_Report.write(f'\nNumber of arriving lions: {Lion.lion_count}')
+Zoo_Animals_Report.write(f'\nNumber of arriving tigers: {Tiger.tiger_count}')
+Zoo_Animals_Report.write(f'\nNumber of arriving bears: {Bear.bear_count}')
+Zoo_Animals_Report.write(f'\nTotal arriving animals: {Animal.animal_count}')
     
 # These 3 functions close out the .txt files used in this program
 animalNamestxt.close()    
