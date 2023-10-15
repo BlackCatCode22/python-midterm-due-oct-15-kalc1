@@ -388,14 +388,6 @@ genzooHabitat('bear')
 merged_objects = (hyena_habitat+tiger_habitat+lion_habitat+bear_habitat)
 # print(merged_objects)
 
-# These print functions serve to test our outputs
-# print(hyena_habitat[0].birthday)
-# print(hyena_habitat[1].birthday)
-# print(hyena_habitat[3].birthday)
-# print(tiger_habitat[1].birthday)
-# print(lion_habitat[2].birthday)
-# print(bear_habitat[3].birthday)
-
 # This function enables us to write 
 Zoo_Animals_Report = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-midterm-due-oct-15-kalc1\\midtermOutput.txt', 'w') 
 
@@ -403,27 +395,18 @@ Zoo_Animals_Report = open('c:\\Users\\kalco\\Coding Projects\\Python\\python-mid
 Zoo_Animals_Report.write("Hyena Habitat:\n\n")
 for hyena in hyena_habitat:
     Zoo_Animals_Report.write(f'{hyena.ID}; {hyena.name}; {hyena.age}; birth date {hyena.birthday};{hyena.color}; {hyena.sex};{hyena.weight};{hyena.origin}\n')
-    
-#                                     ID = genUniqueAnimalID(habitat),
-#                                     age = genAge(habitat, i), 
-#                                     color = genColor(habitat, i), 
-#                                     sex = genSex(habitat, i), 
-#                                     weight = genWeight(habitat, i), 
-#                                     origin = genOrigin(habitat, i), 
-#                                     name = genAnimalName(habitat, i),
-#                                     birthday = genBirthDay(habitat, i)))
 
 Zoo_Animals_Report.write("\nLion Habitat:\n\n")
-# for lion in lion_habitat:
-#     Zoo_Animals_Report.write()
+for lion in lion_habitat:
+    Zoo_Animals_Report.write(f'{lion.ID}; {lion.name}; {lion.age}; birth date {lion.birthday};{lion.color}; {lion.sex};{lion.weight};{lion.origin}\n')
 
 Zoo_Animals_Report.write("\nTiger Habitat:\n\n")
-# for tiger in tiger_habitat:
-#     Zoo_Animals_Report.write()
+for tiger in tiger_habitat:
+    Zoo_Animals_Report.write(f'{tiger.ID}; {tiger.name}; {tiger.age}; birth date {tiger.birthday};{tiger.color}; {tiger.sex};{tiger.weight};{tiger.origin}\n')
 
 Zoo_Animals_Report.write("\nBear Habitat:\n\n")
-# for bear in bear_habitat:
-#     Zoo_Animals_Report.write()
+for bear in bear_habitat:
+    Zoo_Animals_Report.write(f'{bear.ID}; {bear.name}; {bear.age}; birth date {bear.birthday};{bear.color}; {bear.sex};{bear.weight};{bear.origin}\n')
     
 # These 3 functions close out the .txt files used in this program
 animalNamestxt.close()    
